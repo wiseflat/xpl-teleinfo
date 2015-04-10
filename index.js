@@ -26,7 +26,6 @@ wt.init(function(error, xpl) {
         }, 60 * 1000);
 	
         xpl.on("xpl:teleinfo.basic", function(evt) {
-		//console.log(evt);
-                wt.validBasicSchema(evt.body);
+		if(wt.configHash.enable) wt.validBasicSchema(evt.body);
         });
 });
