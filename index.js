@@ -28,4 +28,8 @@ wt.init(function(error, xpl) {
         xpl.on("xpl:teleinfo.basic", function(evt) {
 		if(wt.configHash.enable) wt.validBasicSchema(evt.body);
         });
+	
+        xpl.on("xpl:teleinfo.config", function(evt) {
+                if(evt.headerName == 'xpl-cmnd') wt.writeConfig(evt);
+        });
 });
