@@ -1,6 +1,6 @@
 {
   "name": "xpl-teleinfo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node JS layer to send teleinfo info through xPL",
   "main": "./lib/xpl-teleinfo.js",
   "dependencies": {
